@@ -1,0 +1,98 @@
+body {
+    background-color: black;
+    margin: 0;
+    font-family: "Space Grotesk", sans-serif; /* Default font */
+}
+
+.audiowide-regular {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: oblique;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column; /* Stack items on small screens */
+    align-items: center;
+}
+
+.flex-item {
+    align-items: center;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    overflow-x: auto; /* Allow horizontal scrolling */
+}
+
+h1, h2, p, blockquote {
+    color: lawngreen;
+    font-style: oblique;
+    text-align: center;
+    text-shadow: 2px 2px 5px silver;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.table {
+    color: lawngreen;
+    font-family: "Audiowide", sans-serif;
+    font-style: oblique;
+    text-shadow: 2px 2px 5px silver;
+    width: 100%; /* Full width on smaller screens */
+    max-width: 600px; /* Limit width on larger screens */
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px groove lawngreen; /* Add some borders */
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 600px; /* Responsive width for images */
+}
+
+blockquote {
+    margin: 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 760px) {
+    h1 {
+        font-size: 2.5rem; /* Reduce font size on small screens */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Reduce font size on small screens */
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .responsive {
+        width: 100%; /* Image takes full width on small screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .table {
+        font-size: 0.9rem; /* Slightly smaller font for table */
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+}
